@@ -1,4 +1,6 @@
+
 import React from "react";
+import { Link } from "react-router-dom";
 import ColorPalette from "./ColorPalette";
 import ShadowExamples from "./ShadowExamples";
 import BorderRadiusExamples from "./BorderRadiusExamples";
@@ -19,6 +21,9 @@ const DesignSystem: React.FC = () => {
           <p className="mt-2">
             A comprehensive guide to our UI components and styles
           </p>
+          <Link to="/token-test" className="inline-block mt-2 bg-white text-[#25C9D0] px-4 py-1 rounded font-semibold text-sm hover:bg-opacity-90 transition-colors">
+            View Token Test Page
+          </Link>
         </header>
 
         <main className="container mx-auto px-4 py-8">
