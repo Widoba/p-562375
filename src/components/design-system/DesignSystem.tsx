@@ -21,9 +21,14 @@ const DesignSystem: React.FC = () => {
           <p className="mt-2">
             A comprehensive guide to our UI components and styles
           </p>
-          <Link to="/token-test" className="inline-block mt-2 bg-white text-[#25C9D0] px-4 py-1 rounded font-semibold text-sm hover:bg-opacity-90 transition-colors">
-            View Token Test Page
-          </Link>
+          <div className="flex mt-2 space-x-2">
+            <Link to="/token-test" className="inline-block bg-white text-[#25C9D0] px-4 py-1 rounded font-semibold text-sm hover:bg-opacity-90 transition-colors">
+              View Token Test Page
+            </Link>
+            <Link to="/token-transform-table" className="inline-block bg-white text-[#25C9D0] px-4 py-1 rounded font-semibold text-sm hover:bg-opacity-90 transition-colors">
+              View Token Transformation Table
+            </Link>
+          </div>
         </header>
 
         <main className="container mx-auto px-4 py-8">

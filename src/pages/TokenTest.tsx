@@ -1,11 +1,16 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TokenTest: React.FC = () => {
   return (
     <div className="min-h-screen bg-white p-8 font-['Open_Sans']">
       <h1 className="text-2xl font-bold mb-8">Design Token Test Page</h1>
       <p className="mb-6">This page contains hardcoded design tokens for testing token transformer scripts.</p>
+      
+      <div className="mb-8 flex space-x-4">
+        <Link to="/" className="text-[#25C9D0] hover:underline">← Back to Design System</Link>
+        <Link to="/token-transform-table" className="text-[#25C9D0] hover:underline">View Token Transformation Table →</Link>
+      </div>
       
       {/* Colors Section */}
       <section className="mb-12">
@@ -241,8 +246,9 @@ const TokenTest: React.FC = () => {
         </div>
       </section>
       
-      <div className="mt-8">
-        <a href="/" className="text-[#25C9D0] hover:underline">← Back to Design System</a>
+      <div className="mt-8 flex space-x-4">
+        <Link to="/" className="text-[#25C9D0] hover:underline">← Back to Design System</Link>
+        <Link to="/token-transform-table" className="text-[#25C9D0] hover:underline">View Token Transformation Table →</Link>
       </div>
     </div>
   );
